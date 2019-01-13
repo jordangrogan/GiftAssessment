@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spiritual Gifts Assessment</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <div id="assessment">
+    <div id="questions"></div>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script>
+    const gifts = [
+      {
+        gift: "Administration",
+        description: "The gift of administration is the divine strength or ability to organize multiple tasks and groups of people to accomplish these tasks.  Luke 14:28-30, Acts 6:1-7, 1 Cor. 12:28",
+        score: 0
+      },
+      {
+        gift: "Apostleship",
+        description: "The gift of apostleship is the divine strength or ability to pioneer new churches and ministries through church planting, overseeing, and training.  Acts 15:22-35, 1 Cor. 12:28, 11 Cor. 12:12, Gal. 2:7-10, Eph. 4:11-14",
+        score: 0
+      },
+      {
+        gift: "Craftsmanship",
+        description: "The gift of craftsmanship is the divine strength or ability to plan, build, and work with your hands in construction environments to accomplish multiple ministry applications.  Exodus 30:22, 31:3-11, 11 Chron. 34:9-13, Acts 18:2-3",
+        score: 0
+      }
+    ];
+
+    const questions = [
+      {
+        question: "I like organizing services and events.",
+        gift: 0
+      },
+      {
+        question: "I enjoy starting new churches.",
+        gift: 1
+      },
+      {
+        question: "I enjoy working with my hands.",
+        gift: 2
+      },
+    ]
+
+    const answers = ["Almost Never", "Seldom", "Sometimes", "Frequently", "Almost Always"];
+
+    const questionsDiv = document.getElementById("questions");
+
+    questions.forEach((question, i) => {
+
+      // Create Question Div
+      let questionDiv = document.createElement("div");
+      questionDiv.className = "question";
+
+      // Create Question Title Div
+      let questionTitleDiv = document.createElement("div");
+      questionTitleDiv.className = "question-title";
+      questionTitleDiv.innerHTML = (i+1) + ". " + question.question;
+      questionDiv.appendChild(questionTitleDiv);
+
+      // Create Answers
+      answers.forEach((answer, j) => {
+        let answerDiv = document.createElement("div");
+        let answerInput = document.createElement("input");
+        let answerLabel = document.createElement("label");
+        answerLabel.innerHTML = answer;
+        answerInput.setAttribute("type", "radio");
+        answerInput.setAttribute("name", i);
+        answerInput.setAttribute("value", j);
+        answerDiv.appendChild(answerInput);
+        answerDiv.appendChild(answerLabel);
+        questionDiv.appendChild(answerDiv);
+      });
+
+      questionsDiv.appendChild(questionDiv);
+    });
+
+    function compareGifts(a,b) {
+      if (a.score < b.score)
+        return 1;
+      if (a.score > b.score)
+        return -1;
+      return 0;
+    }
+
+    function submitForm() {
+
+      // TODO: Form Validation
+
+      // Hide Form
+      document.getElementById("assessment").style.display = "none";
+
+      // Calculate Scores
+      questions.forEach((question, i) => {
+        switch(document.querySelector('input[name="' + i + '"]:checked').value) {
+          case "0":
+            // Almost Never = 1
+            gifts[i%24].score += 1;
+            console.log("Adding 1 to Gift: " + gifts[i%24].gift);
+            break;
+          case "1":
+            // Seldom = 2
+            gifts[i%24].score += 2;
+            console.log("Adding 2 to Gift: " + gifts[i%24].gift);
+            break;
+          case "2":
+            // Sometimes = 3
+            gifts[i%24].score += 3;
+            console.log("Adding 3 to Gift: " + gifts[i%24].gift);
+            break;
+          case "3":
+            // Frequently = 4
+            gifts[i%24].score += 4;
+            console.log("Adding 4 to Gift: " + gifts[i%24].gift);
+            break;
+          case "4":
+            // Almost Always = 5
+            gifts[i%24].score += 5;
+            console.log("Adding 5 to Gift: " + gifts[i%24].gift);
+            break;
+        }
+      });
+
+      // Sort Array
+      let sortedGifts = gifts.slice(); // duplicate array
+      sortedGifts = sortedGifts.sort(compareGifts); // sort array
+      console.log(sortedGifts);
+
+      // Display Top 3 Gifts
+      document.getElementById("results").innerHTML = `
+      <h1>Your Top 3 Gifts</h1>
+      <h2>1. ${sortedGifts[0].gift}</h2>
+      <p>${sortedGifts[0].description}</p>
+      <h2>2. ${sortedGifts[1].gift}</h2>
+      <p>${sortedGifts[1].description}</p>
+      <h2>3. ${sortedGifts[2].gift}</h2>
+      <p>${sortedGifts[2].description}</p>
+      `;
+
+      // Reset Scores - possibly at the very end
+      // resetScores();
+
+    }
+
+    function resetScores() {
+      gifts.forEach((gift) => {
+        gift.score = 0;
+      });
+    }
+
+  </script>
+
+</body>
+</html>
