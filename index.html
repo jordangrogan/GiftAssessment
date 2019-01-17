@@ -3,160 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>Spiritual Gifts Assessment</title>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 
-  <div id="assessment">
-    <div id="questions"></div>
-    <button onclick="submitForm()">Submit</button>
+  <div class="container">
+
+    <h1>Spiritual Gifts & Personality Assessment</h1>
+
+    <p>We believe God has made you for a purpose! Finding and fulfilling your God-given purpose is one of the greatest discoveries you will make in life. This online SHAPE process is a tool to help you discern your unique SHAPE and empower you to connect in a meaningful place of service. The Bible tells us, “we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.”</p>
+
+    <p>SHAPE stands for Spiritual Gifts, Heart, Abilities, Personality, and Experience. Although there are many paths to discovering your best place of service, the online SHAPE assessment is one way to learn more about the role you can play in God’s grand story!</p>
+
+    <p>Please allow at least 45 minutes to take the full assessment. We are aware that it can seem pretty lengthy, but each portion of the assessment is vital to helping us help you evaluate your “SHAPE,” and then to help you find a place of ministry.</p>
+
+    <p>We hope you will find this survey helpful. Please be assured that we keep all information confidential and will not violate your privacy in any way.</p>
+
+    <p>This assessment is based on Saddleback Church’s S.H.A.P.E. Assessment.</p>
+
+    <div id="assessment">
+
+      <h2>Your Information</h2>
+
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10"><input type="text" name="name" class="form-control" /></div>
+      </div>
+
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email:</label>
+        <div class="col-sm-10"><input type="text" name="email" class="form-control" /></div>
+      </div>
+
+      <div class="form-group row">
+        <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
+        <div class="col-sm-10"><input type="text" name="phone" class="form-control" /></div>
+      </div>
+
+      <div class="form-group row">
+        <label for="phone" class="col-sm-2 col-form-label">Crossroads Location:</label>
+        <div class="col-sm-10">
+          <select name="campus" class="form-control">
+            <option>Select a Location</option>
+            <option value="br">Boyce Road</option>
+            <option value="cb">Cranberry</option>
+            <option value="el">East Liberty</option>
+            <option value="nf">North Fayette</option>
+            <option value="wt">Weirton</option>
+            <option value="nf">None</option>
+          </select>
+        </div>
+      </div>
+
+      <h2><strong>S</strong>piritual Gifts</h2>
+      <div id="questions"></div>
+
+      <h2><strong>H</strong>eart</h2>
+      Three things I love to do that bring joy and fulfillment in my life:
+
+      <h2><strong>A</strong>bilities</h2>
+      My current vocation:
+
+      <h2><strong>P</strong>ersonalities</h2>
+      Personality question:
+      <br />
+      <textarea style="width:600px"></textarea><br />
+      <input style-"width:200px" />
+
+      <button onclick="submitForm()" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div id="results"></div>
   </div>
 
-  <div id="results"></div>
-
-  <script>
-    const gifts = [
-      {
-        gift: "Administration",
-        description: "The gift of administration is the divine strength or ability to organize multiple tasks and groups of people to accomplish these tasks.  Luke 14:28-30, Acts 6:1-7, 1 Cor. 12:28",
-        score: 0
-      },
-      {
-        gift: "Apostleship",
-        description: "The gift of apostleship is the divine strength or ability to pioneer new churches and ministries through church planting, overseeing, and training.  Acts 15:22-35, 1 Cor. 12:28, 11 Cor. 12:12, Gal. 2:7-10, Eph. 4:11-14",
-        score: 0
-      },
-      {
-        gift: "Craftsmanship",
-        description: "The gift of craftsmanship is the divine strength or ability to plan, build, and work with your hands in construction environments to accomplish multiple ministry applications.  Exodus 30:22, 31:3-11, 11 Chron. 34:9-13, Acts 18:2-3",
-        score: 0
-      }
-    ];
-
-    const questions = [
-      {
-        question: "I like organizing services and events.",
-        gift: 0
-      },
-      {
-        question: "I enjoy starting new churches.",
-        gift: 1
-      },
-      {
-        question: "I enjoy working with my hands.",
-        gift: 2
-      },
-    ]
-
-    const answers = ["Almost Never", "Seldom", "Sometimes", "Frequently", "Almost Always"];
-
-    const questionsDiv = document.getElementById("questions");
-
-    questions.forEach((question, i) => {
-
-      // Create Question Div
-      let questionDiv = document.createElement("div");
-      questionDiv.className = "question";
-
-      // Create Question Title Div
-      let questionTitleDiv = document.createElement("div");
-      questionTitleDiv.className = "question-title";
-      questionTitleDiv.innerHTML = (i+1) + ". " + question.question;
-      questionDiv.appendChild(questionTitleDiv);
-
-      // Create Answers
-      answers.forEach((answer, j) => {
-        let answerDiv = document.createElement("div");
-        let answerInput = document.createElement("input");
-        let answerLabel = document.createElement("label");
-        answerLabel.innerHTML = answer;
-        answerInput.setAttribute("type", "radio");
-        answerInput.setAttribute("name", i);
-        answerInput.setAttribute("value", j);
-        answerDiv.appendChild(answerInput);
-        answerDiv.appendChild(answerLabel);
-        questionDiv.appendChild(answerDiv);
-      });
-
-      questionsDiv.appendChild(questionDiv);
-    });
-
-    function compareGifts(a,b) {
-      if (a.score < b.score)
-        return 1;
-      if (a.score > b.score)
-        return -1;
-      return 0;
-    }
-
-    function submitForm() {
-
-      // TODO: Form Validation
-
-      // Hide Form
-      document.getElementById("assessment").style.display = "none";
-
-      // Calculate Scores
-      questions.forEach((question, i) => {
-        switch(document.querySelector('input[name="' + i + '"]:checked').value) {
-          case "0":
-            // Almost Never = 1
-            gifts[i%24].score += 1;
-            console.log("Adding 1 to Gift: " + gifts[i%24].gift);
-            break;
-          case "1":
-            // Seldom = 2
-            gifts[i%24].score += 2;
-            console.log("Adding 2 to Gift: " + gifts[i%24].gift);
-            break;
-          case "2":
-            // Sometimes = 3
-            gifts[i%24].score += 3;
-            console.log("Adding 3 to Gift: " + gifts[i%24].gift);
-            break;
-          case "3":
-            // Frequently = 4
-            gifts[i%24].score += 4;
-            console.log("Adding 4 to Gift: " + gifts[i%24].gift);
-            break;
-          case "4":
-            // Almost Always = 5
-            gifts[i%24].score += 5;
-            console.log("Adding 5 to Gift: " + gifts[i%24].gift);
-            break;
-        }
-      });
-
-      // Sort Array
-      let sortedGifts = gifts.slice(); // duplicate array
-      sortedGifts = sortedGifts.sort(compareGifts); // sort array
-      console.log(sortedGifts);
-
-      // Display Top 3 Gifts
-      document.getElementById("results").innerHTML = `
-      <h1>Your Top 3 Gifts</h1>
-      <h2>1. ${sortedGifts[0].gift}</h2>
-      <p>${sortedGifts[0].description}</p>
-      <h2>2. ${sortedGifts[1].gift}</h2>
-      <p>${sortedGifts[1].description}</p>
-      <h2>3. ${sortedGifts[2].gift}</h2>
-      <p>${sortedGifts[2].description}</p>
-      `;
-
-      // Reset Scores - possibly at the very end
-      // resetScores();
-
-    }
-
-    function resetScores() {
-      gifts.forEach((gift) => {
-        gift.score = 0;
-      });
-    }
-
-  </script>
+  <script src="questions.js"></script>
+  <script src="qa.js"></script>
+  <script src="scripts.js"></script>
 
 </body>
 </html>

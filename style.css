@@ -1,0 +1,12 @@
+body {
+  background: #e5e4e4;
+}
+.question {
+  margin-bottom: 5px;
+}
+h1, h2 {
+  color: #007da9;
+}
+.container {
+  margin-top: 20px;
+}
