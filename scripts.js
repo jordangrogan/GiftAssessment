@@ -167,3 +167,11 @@ function resetScores() {
 }
 
 updateResults(); // So that it shows the message to fill out questions
+
+function showTimeOptions(show) {
+  if(show) {
+    document.getElementById("timeOptions").className = "row d-block";
+  } else {
+    document.getElementById("timeOptions").className = "row d-none";
+  }
+}
