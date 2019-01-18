@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div id="assessment">
+    <form class="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyLnlqzygd90N8B01zqE_-6c4kLRhC_fd7VusBI79YsN2p9B8JR/exec">
 
       <div class="row top-separation">
         <div class="col-12">
@@ -43,30 +43,30 @@
 
       <div class="form-group row">
         <label for="name" class="col-sm-2 col-form-label">Name:</label>
-        <div class="col-sm-10"><input type="text" name="name" class="form-control" id="name" /></div>
+        <div class="col-sm-10"><input type="text" name="Name" class="form-control" id="name" /></div>
       </div>
 
       <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email:</label>
-        <div class="col-sm-10"><input type="text" name="email" class="form-control" id="email" /></div>
+        <div class="col-sm-10"><input type="text" name="Email" class="form-control" id="email" /></div>
       </div>
 
       <div class="form-group row">
         <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
-        <div class="col-sm-10"><input type="text" name="phone" class="form-control" id="phone" /></div>
+        <div class="col-sm-10"><input type="text" name="Phone" class="form-control" id="phone" /></div>
       </div>
 
       <div class="form-group row">
         <label for="campus" class="col-sm-2 col-form-label">Crossroads Location:</label>
         <div class="col-sm-10">
-          <select name="campus" class="form-control" id="campus">
+          <select name="Campus" class="form-control" id="campus">
             <option>Select a Location</option>
-            <option value="br">Boyce Road</option>
-            <option value="cb">Cranberry</option>
-            <option value="el">East Liberty</option>
-            <option value="nf">North Fayette</option>
-            <option value="wt">Weirton</option>
-            <option value="nf">None</option>
+            <option value="Boyce Road">Boyce Road</option>
+            <option value="Cranberry">Cranberry</option>
+            <option value="East Liberty">East Liberty</option>
+            <option value="North Fayette">North Fayette</option>
+            <option value="Weirton">Weirton</option>
+            <option value="None">None</option>
           </select>
         </div>
       </div>
@@ -87,9 +87,9 @@
       </div>
 
       <div id="spiritualGiftQuestions" class="d-none">
-        <input type="hidden" name="topgift1" value="" />
-        <input type="hidden" name="topgift2" value="" />
-        <input type="hidden" name="topgift3" value="" />
+        <input type="hidden" name="1st Top Gift" value="" />
+        <input type="hidden" name="2nd Top Gift" value="" />
+        <input type="hidden" name="3rd Top Gift" value="" />
         <div class="row mt-3">
           <div class="col-12 font-weight-bold">
             I feel I have these gifts because…
@@ -98,19 +98,19 @@
         <div class="form-group row mb-0">
           <div class="col-12">
             <label for="whygift1" class="mb-0">1. </label>
-            <textarea class="form-control" id="whygift1" name="whygift1" rows="3"></textarea>
+            <textarea class="form-control" id="whygift1" name="Why 1st Top Gift" rows="3"></textarea>
           </div>
         </div>
         <div class="form-group row mb-0">
           <div class="col-12">
             <label for="whygift2" class="mb-0">2. </label>
-            <textarea class="form-control" id="whygift2" name="whygift2" rows="3"></textarea>
+            <textarea class="form-control" id="whygift2" name="Why 2nd Top Gift" rows="3"></textarea>
           </div>
         </div>
         <div class="form-group row">
           <div class="col-12">
             <label for="whygift3" class="mb-0">3. </label>
-            <textarea class="form-control" id="whygift2" name="whygift3" rows="3"></textarea>
+            <textarea class="form-control" id="whygift2" name="Why 3rd Top Gift" rows="3"></textarea>
           </div>
         </div>
       </div>
@@ -124,28 +124,28 @@
       <div class="form-group row">
         <div class="col-12">
           <label for="heart-q1" class="mb-0">Three things I love to do that bring joy and fulfillment in my life:</label>
-          <textarea class="form-control" id="heart-q1" name="heart-q1" rows="3"></textarea>
+          <textarea class="form-control" id="heart-q1" name="Three things I love to do that bring joy and fulfillment in my life" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="heart-q2" class="mb-0">Who I love to work with most, and the age or type of people:</label>
-          <textarea class="form-control" id="heart-q2" name="heart-q2" rows="3"></textarea>
+          <textarea class="form-control" id="heart-q2" name="Who I love to work with most, and the age or type of people" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="heart-q3" class="mb-0">Church issues, ministries, or possible needs that excite or concern me the most:</label>
-          <textarea class="form-control" id="heart-q3" name="heart-q3" rows="3"></textarea>
+          <textarea class="form-control" id="heart-q3" name="Church issues, ministries, or possible needs that excite or concern me the most" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="heart-q4" class="mb-0">If I knew I couldn't fail, this is what I would attempt to do for God with my life:</label>
-          <textarea class="form-control" id="heart-q4" name="heart-q4" rows="3"></textarea>
+          <textarea class="form-control" id="heart-q4" name="If I knew I couldn't fail, this is what I would attempt to do for God with my life" rows="3"></textarea>
         </div>
       </div>
 
@@ -158,35 +158,35 @@
       <div class="form-group row">
         <div class="col-12">
           <label for="abilities-q1" class="mb-0">My current vocation:</label>
-          <textarea class="form-control" id="abilities-q1" name="abilities-q1" rows="3"></textarea>
+          <textarea class="form-control" id="abilities-q1" name="My current vocation" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="abilities-q2" class="mb-0">Other jobs I have experience in:</label>
-          <textarea class="form-control" id="abilities-q2" name="abilities-q2" rows="3"></textarea>
+          <textarea class="form-control" id="abilities-q2" name="Other jobs I have experience in" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="abilities-q3" class="mb-0">Special talents/skills that I have:</label>
-          <textarea class="form-control" id="abilities-q3" name="abilities-q3" rows="3"></textarea>
+          <textarea class="form-control" id="abilities-q3" name="Special talents/skills that I have" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="abilities-q4" class="mb-0">I have taught a class or seminar on:</label>
-          <textarea class="form-control" id="abilities-q4" name="abilities-q4" rows="3"></textarea>
+          <textarea class="form-control" id="abilities-q4" name="I have taught a class or seminar on" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="abilities-q5" class="mb-0">I feel my most valuable personal asset is:</label>
-          <textarea class="form-control" id="abilities-q5" name="abilities-q5" rows="3"></textarea>
+          <textarea class="form-control" id="abilities-q5" name="I feel my most valuable personal asset is" rows="3"></textarea>
         </div>
       </div>
 
@@ -200,12 +200,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q1" id="personality-q1-op1" value="Extroverted">
+            <input class="form-check-input" type="radio" name="Extroverted or Introverted" id="personality-q1-op1" value="Extroverted">
             <label class="form-check-label" for="personality-q1-op1">Extroverted</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q1" id="personality-q1-op2" value="Introverted">
+            <input class="form-check-input" type="radio" name="Extroverted or Introverted" id="personality-q1-op2" value="Introverted">
             <label class="form-check-label" for="personality-q1-op2">Introverted</label>
           </div>
         </div>
@@ -214,12 +214,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q2" id="personality-q2-op1" value="Thinker">
+            <input class="form-check-input" type="radio" name="Thinker or Feeler" id="personality-q2-op1" value="Thinker">
             <label class="form-check-label" for="personality-q2-op1">Thinker</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q2" id="personality-q2-op2" value="Feeler">
+            <input class="form-check-input" type="radio" name="Thinker or Feeler" id="personality-q2-op2" value="Feeler">
             <label class="form-check-label" for="personality-q2-op2">Feeler</label>
           </div>
         </div>
@@ -228,12 +228,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q3" id="personality-q3-op1" value="Routine">
+            <input class="form-check-input" type="radio" name="Routine or Variety" id="personality-q3-op1" value="Routine">
             <label class="form-check-label" for="personality-q3-op1">Routine</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q3" id="personality-q3-op2" value="Variety">
+            <input class="form-check-input" type="radio" name="Routine or Variety" id="personality-q3-op2" value="Variety">
             <label class="form-check-label" for="personality-q3-op2">Variety</label>
           </div>
         </div>
@@ -242,12 +242,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q4" id="personality-q4-op1" value="Reserved">
+            <input class="form-check-input" type="radio" name="Reserved or Expressive" id="personality-q4-op1" value="Reserved">
             <label class="form-check-label" for="personality-q4-op1">Reserved</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q4" id="personality-q4-op2" value="Expressive">
+            <input class="form-check-input" type="radio" name="Reserved or Expressive" id="personality-q4-op2" value="Expressive">
             <label class="form-check-label" for="personality-q4-op2">Expressive</label>
           </div>
         </div>
@@ -256,12 +256,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q5" id="personality-q5-op1" value="Cooperative">
+            <input class="form-check-input" type="radio" name="Cooperative or Competitive" id="personality-q5-op1" value="Cooperative">
             <label class="form-check-label" for="personality-q5-op1">Cooperative</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q5" id="personality-q5-op2" value="Competitive">
+            <input class="form-check-input" type="radio" name="Cooperative or Competitive" id="personality-q5-op2" value="Competitive">
             <label class="form-check-label" for="personality-q5-op2">Competitive</label>
           </div>
         </div>
@@ -270,12 +270,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q6" id="personality-q6-op1" value="Team">
+            <input class="form-check-input" type="radio" name="Team or Solo" id="personality-q6-op1" value="Team">
             <label class="form-check-label" for="personality-q6-op1">Team</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q6" id="personality-q6-op2" value="Solo">
+            <input class="form-check-input" type="radio" name="Team or Solo" id="personality-q6-op2" value="Solo">
             <label class="form-check-label" for="personality-q6-op2">Solo</label>
           </div>
         </div>
@@ -284,12 +284,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q7" id="personality-q7-op1" value="People">
+            <input class="form-check-input" type="radio" name="People or Project" id="personality-q7-op1" value="People">
             <label class="form-check-label" for="personality-q7-op1">People</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q7" id="personality-q7-op2" value="Project">
+            <input class="form-check-input" type="radio" name="People or Project" id="personality-q7-op2" value="Project">
             <label class="form-check-label" for="personality-q7-op2">Project</label>
           </div>
         </div>
@@ -298,12 +298,12 @@
       <div class="row">
         <div class="col-12">
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q8" id="personality-q8-op1" value="Leader">
+            <input class="form-check-input" type="radio" name="Leader or Follower" id="personality-q8-op1" value="Leader">
             <label class="form-check-label" for="personality-q8-op1">Leader</label>
           </div>
           <span class="form-check-inline">or</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="personality-q8" id="personality-q8-op2" value="Follower">
+            <input class="form-check-input" type="radio" name="Leader or Follower" id="personality-q8-op2" value="Follower">
             <label class="form-check-label" for="personality-q8-op2">Follower</label>
           </div>
         </div>
@@ -318,28 +318,28 @@
       <div class="form-group row">
         <div class="col-12">
           <label for="experience-q1" class="mb-0">My testimony of how I became a Christian:</label>
-          <textarea class="form-control" id="experience-q1" name="experience-q1" rows="3"></textarea>
+          <textarea class="form-control" id="experience-q1" name="My testimony of how I became a Christian" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="experience-q2" class="mb-0">Other significant spiritual experiences that stand out in my life are:</label>
-          <textarea class="form-control" id="experience-q2" name="experience-q2" rows="3"></textarea>
+          <textarea class="form-control" id="experience-q2" name="Other significant spiritual experiences that stand out in my life are" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="experience-q3" class="mb-0">These are the kinds of trials or problems I could relate to and encourage a fellow Christian in:</label>
-          <textarea class="form-control" id="experience-q3" name="experience-q3" rows="3"></textarea>
+          <textarea class="form-control" id="experience-q3" name="These are the kinds of trials or problems I could relate to and encourage a fellow Christian in" rows="3"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-12">
           <label for="experience-q4" class="mb-0">Ministry Experience (where I have served in the past):</label>
-          <textarea class="form-control" id="experience-q4" name="experience-q4" rows="3"></textarea>
+          <textarea class="form-control" id="experience-q4" name="Ministry Experience (where I have served in the past)" rows="3"></textarea>
         </div>
       </div>
 
@@ -347,11 +347,11 @@
         <div class="col-12">
           <span class="form-check-inline font-weight-bold">Would you like to meet with one of our coaches to see how to better utilize your gifts?</span>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="coach-yes-no" id="coach-yes" value="yes" onclick="showTimeOptions(true)">
+            <input class="form-check-input" type="radio" name="Would you like to meet with one of our coaches to see how to better utilize your gifts" id="coach-yes" value="yes" onclick="showTimeOptions(true)">
             <label class="form-check-label" for="coach-yes">Yes</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="coach-yes-no" id="coach-no" value="no" onclick="showTimeOptions(false)">
+            <input class="form-check-input" type="radio" name="Would you like to meet with one of our coaches to see how to better utilize your gifts" id="coach-no" value="no" onclick="showTimeOptions(false)">
             <label class="form-check-label" for="coach-no">No</label>
           </div>
         </div>
@@ -361,44 +361,44 @@
         <div class="col-12">
           What days and times of day work best for you?<br />
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="SundayCheck" value="Sunday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="SundayCheck" value="Sunday">
             <label class="form-check-label" for="SundayCheck">Sunday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="MondayCheck" value="Monday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="MondayCheck" value="Monday">
             <label class="form-check-label" for="MondayCheck">Monday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="TuesdayCheck" value="Tuesday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="TuesdayCheck" value="Tuesday">
             <label class="form-check-label" for="TuesdayCheck">Tuesday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="WednesdayCheck" value="Wednesday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="WednesdayCheck" value="Wednesday">
             <label class="form-check-label" for="WednesdayCheck">Wednesday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="ThursdayCheck" value="Thursday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="ThursdayCheck" value="Thursday">
             <label class="form-check-label" for="ThursdayCheck">Thursday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="FridayCheck" value="Friday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="FridayCheck" value="Friday">
             <label class="form-check-label" for="FridayCheck">Friday</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="days" id="SaturdayCheck" value="Saturday">
+            <input class="form-check-input" type="checkbox" name="Days Available" id="SaturdayCheck" value="Saturday">
             <label class="form-check-label" for="SaturdayCheck">Saturday</label>
           </div>
           <br />
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="times" id="MorningCheck" value="Morning">
+            <input class="form-check-input" type="checkbox" name="Times Available" id="MorningCheck" value="Morning">
             <label class="form-check-label" for="MorningCheck">Morning</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="times" id="AfternoonCheck" value="Afternoon">
+            <input class="form-check-input" type="checkbox" name="Times Available" id="AfternoonCheck" value="Afternoon">
             <label class="form-check-label" for="AfternoonCheck">Afternoon</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="times" id="EveningCheck" value="Evening">
+            <input class="form-check-input" type="checkbox" name="Times Available" id="EveningCheck" value="Evening">
             <label class="form-check-label" for="EveningCheck">Evening</label>
           </div>
         </div>
@@ -410,13 +410,14 @@
         </div>
       </div>
 
-    </div>
+    </form>
 
   </div>
 
   <script src="qa.js"></script>
   <script src="gifts.js"></script>
   <script src="scripts.js"></script>
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
 
 </body>
 </html>

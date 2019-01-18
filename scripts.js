@@ -88,24 +88,14 @@ function updateResults() {
     document.querySelector('label[for="whygift1"]').innerHTML = `1. ${sortedGifts[0].gift}`;
     document.querySelector('label[for="whygift2"]').innerHTML = `2. ${sortedGifts[1].gift}`;
     document.querySelector('label[for="whygift3"]').innerHTML = `3. ${sortedGifts[2].gift}`;
-    document.querySelector('input[name="topgift1"]').value = `${sortedGifts[0].gift}`;
-    document.querySelector('input[name="topgift2"]').value = `${sortedGifts[1].gift}`;
-    document.querySelector('input[name="topgift3"]').value = `${sortedGifts[2].gift}`;
+    document.querySelector('input[name="1st Top Gift"]').value = `${sortedGifts[0].gift}`;
+    document.querySelector('input[name="2nd Top Gift"]').value = `${sortedGifts[1].gift}`;
+    document.querySelector('input[name="3rd Top Gift"]').value = `${sortedGifts[2].gift}`;
 
   } else {
     // Spiritual gifts questions not complete
     resultsDiv.innerHTML = '<span class="font-italic">Fill in these questions above to see your results: ' + incompleteList + '</span>';
   }
-
-}
-
-function submitForm() {
-
-  // TODO: Form Validation
-
-  // Hide Form
-  document.getElementById("assessment").style.display = "none";
-
 
 }
 
