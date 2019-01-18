@@ -94,7 +94,7 @@ function updateResults() {
 
   } else {
     // Spiritual gifts questions not complete
-    resultsDiv.innerHTML = '<span class="font-italic">Fill in the following questions above to see your results: ' + incompleteList + '</span>';
+    resultsDiv.innerHTML = '<span class="font-italic">Fill in these questions above to see your results: ' + incompleteList + '</span>';
   }
 
 }
