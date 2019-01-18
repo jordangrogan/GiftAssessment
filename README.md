@@ -1,2 +1,3 @@
 # GiftAssessment
-Spiritual Gift Assessment for Crossroads Church
+Spiritual Gift Assessment for Crossroads Church  
+http://xrchurch.org/gifts
