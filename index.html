@@ -11,41 +11,55 @@
 
   <div class="container">
 
-    <h1>Spiritual Gifts & Personality Assessment</h1>
+    <div class="row">
+      <div class="col-5 col-md-4 col-lg-3">
+        <img src="CrossroadsLogo.png" class="img-fluid" />
+      </div>
+    </div>
 
-    <p>We believe God has made you for a purpose! Finding and fulfilling your God-given purpose is one of the greatest discoveries you will make in life. This online SHAPE process is a tool to help you discern your unique SHAPE and empower you to connect in a meaningful place of service. The Bible tells us, “we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.”</p>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="font-weight-bold">Spiritual Gifts & Personality Assessment</h1>
 
-    <p>SHAPE stands for Spiritual Gifts, Heart, Abilities, Personality, and Experience. Although there are many paths to discovering your best place of service, the online SHAPE assessment is one way to learn more about the role you can play in God’s grand story!</p>
+        <p>We believe God has made you for a purpose! Finding and fulfilling your God-given purpose is one of the greatest discoveries you will make in life. This online SHAPE process is a tool to help you discern your unique SHAPE and empower you to connect in a meaningful place of service. The Bible tells us, “we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.”</p>
 
-    <p>Please allow at least 45 minutes to take the full assessment. We are aware that it can seem pretty lengthy, but each portion of the assessment is vital to helping us help you evaluate your “SHAPE,” and then to help you find a place of ministry.</p>
+        <p>SHAPE stands for Spiritual Gifts, Heart, Abilities, Personality, and Experience. Although there are many paths to discovering your best place of service, the online SHAPE assessment is one way to learn more about the role you can play in God’s grand story!</p>
 
-    <p>We hope you will find this survey helpful. Please be assured that we keep all information confidential and will not violate your privacy in any way.</p>
+        <p>Please allow at least 45 minutes to take the full assessment. We are aware that it can seem pretty lengthy, but each portion of the assessment is vital to helping us help you evaluate your “SHAPE,” and then to help you find a place of ministry.</p>
 
-    <p>This assessment is based on Saddleback Church’s S.H.A.P.E. Assessment.</p>
+        <p>We hope you will find this survey helpful. Please be assured that we keep all information confidential and will not violate your privacy in any way.</p>
+
+        <p style="margin-bottom:0;">This assessment is based on Saddleback Church’s S.H.A.P.E. Assessment.</p>
+      </div>
+    </div>
 
     <div id="assessment">
 
-      <h2>Your Information</h2>
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2>Your Information</h2>
+        </div>
+      </div>
 
       <div class="form-group row">
         <label for="name" class="col-sm-2 col-form-label">Name:</label>
-        <div class="col-sm-10"><input type="text" name="name" class="form-control" /></div>
+        <div class="col-sm-10"><input type="text" name="name" class="form-control" id="name" /></div>
       </div>
 
       <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email:</label>
-        <div class="col-sm-10"><input type="text" name="email" class="form-control" /></div>
+        <div class="col-sm-10"><input type="text" name="email" class="form-control" id="email" /></div>
       </div>
 
       <div class="form-group row">
         <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
-        <div class="col-sm-10"><input type="text" name="phone" class="form-control" /></div>
+        <div class="col-sm-10"><input type="text" name="phone" class="form-control" id="phone" /></div>
       </div>
 
       <div class="form-group row">
-        <label for="phone" class="col-sm-2 col-form-label">Crossroads Location:</label>
+        <label for="campus" class="col-sm-2 col-form-label">Crossroads Location:</label>
         <div class="col-sm-10">
-          <select name="campus" class="form-control">
+          <select name="campus" class="form-control" id="campus">
             <option>Select a Location</option>
             <option value="br">Boyce Road</option>
             <option value="cb">Cranberry</option>
@@ -57,29 +71,289 @@
         </div>
       </div>
 
-      <h2><strong>S</strong>piritual Gifts</h2>
-      <div id="questions"></div>
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2><strong>S</strong>piritual Gifts</h2>
+        </div>
+      </div>
 
-      <h2><strong>H</strong>eart</h2>
-      Three things I love to do that bring joy and fulfillment in my life:
+      <fieldset class="form-group" id="questions">
+      </fieldset>
 
-      <h2><strong>A</strong>bilities</h2>
-      My current vocation:
+      <div class="row">
+        <div class="col-12">
+          <div id="results"></div>
+        </div>
+      </div>
 
-      <h2><strong>P</strong>ersonalities</h2>
-      Personality question:
-      <br />
-      <textarea style="width:600px"></textarea><br />
-      <input style-"width:200px" />
+      <div id="spiritualGiftQuestions" class="d-none">
+        <input type="hidden" name="topgift1" value="" />
+        <input type="hidden" name="topgift2" value="" />
+        <input type="hidden" name="topgift3" value="" />
+        <div class="row mt-3">
+          <div class="col-12 font-weight-bold">
+            I feel I have these gifts because…
+          </div>
+        </div>
+        <div class="form-group row mb-0">
+          <div class="col-12">
+            <label for="whygift1" class="mb-0">1. </label>
+            <textarea class="form-control" id="whygift1" name="whygift1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-group row mb-0">
+          <div class="col-12">
+            <label for="whygift2" class="mb-0">2. </label>
+            <textarea class="form-control" id="whygift2" name="whygift2" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <label for="whygift3" class="mb-0">3. </label>
+            <textarea class="form-control" id="whygift2" name="whygift3" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
 
-      <button onclick="submitForm()" class="btn btn-primary">Submit</button>
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2><strong>H</strong>eart <span style="font-weight:normal;">(What Your Heart Beats For)</span></h2>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="heart-q1" class="mb-0">Three things I love to do that bring joy and fulfillment in my life:</label>
+          <textarea class="form-control" id="heart-q1" name="heart-q1" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="heart-q2" class="mb-0">Who I love to work with most, and the age or type of people:</label>
+          <textarea class="form-control" id="heart-q2" name="heart-q2" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="heart-q3" class="mb-0">Church issues, ministries, or possible needs that excite or concern me the most:</label>
+          <textarea class="form-control" id="heart-q3" name="heart-q3" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="heart-q4" class="mb-0">If I knew I couldn't fail, this is what I would attempt to do for God with my life:</label>
+          <textarea class="form-control" id="heart-q4" name="heart-q4" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2><strong>A</strong>bilities</h2>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="abilities-q1" class="mb-0">My current vocation:</label>
+          <textarea class="form-control" id="abilities-q1" name="abilities-q1" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="abilities-q2" class="mb-0">Other jobs I have experience in:</label>
+          <textarea class="form-control" id="abilities-q2" name="abilities-q2" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="abilities-q3" class="mb-0">Special talents/skills that I have:</label>
+          <textarea class="form-control" id="abilities-q3" name="abilities-q3" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="abilities-q4" class="mb-0">I have taught a class or seminar on:</label>
+          <textarea class="form-control" id="abilities-q4" name="abilities-q4" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="abilities-q5" class="mb-0">I feel my most valuable personal asset is:</label>
+          <textarea class="form-control" id="abilities-q5" name="abilities-q5" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2><strong>P</strong>ersonality</h2>
+          Select where you lean in these differing personality traits:
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q1" id="personality-q1-op1" value="Extroverted">
+            <label class="form-check-label" for="personality-q1-op1">Extroverted</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q1" id="personality-q1-op2" value="Introverted">
+            <label class="form-check-label" for="personality-q1-op2">Introverted</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q2" id="personality-q2-op1" value="Thinker">
+            <label class="form-check-label" for="personality-q2-op1">Thinker</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q2" id="personality-q2-op2" value="Feeler">
+            <label class="form-check-label" for="personality-q2-op2">Feeler</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q3" id="personality-q3-op1" value="Routine">
+            <label class="form-check-label" for="personality-q3-op1">Routine</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q3" id="personality-q3-op2" value="Variety">
+            <label class="form-check-label" for="personality-q3-op2">Variety</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q4" id="personality-q4-op1" value="Reserved">
+            <label class="form-check-label" for="personality-q4-op1">Reserved</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q4" id="personality-q4-op2" value="Expressive">
+            <label class="form-check-label" for="personality-q4-op2">Expressive</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q5" id="personality-q5-op1" value="Cooperative">
+            <label class="form-check-label" for="personality-q5-op1">Cooperative</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q5" id="personality-q5-op2" value="Competitive">
+            <label class="form-check-label" for="personality-q5-op2">Competitive</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q6" id="personality-q6-op1" value="Team">
+            <label class="form-check-label" for="personality-q6-op1">Team</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q6" id="personality-q6-op2" value="Solo">
+            <label class="form-check-label" for="personality-q6-op2">Solo</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q7" id="personality-q7-op1" value="People">
+            <label class="form-check-label" for="personality-q7-op1">People</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q7" id="personality-q7-op2" value="Project">
+            <label class="form-check-label" for="personality-q7-op2">Project</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q8" id="personality-q8-op1" value="Leader">
+            <label class="form-check-label" for="personality-q8-op1">Leader</label>
+          </div>
+          <span class="form-check-inline">or</span>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="personality-q8" id="personality-q8-op2" value="Follower">
+            <label class="form-check-label" for="personality-q8-op2">Follower</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row top-separation">
+        <div class="col-12">
+          <h2><strong>E</strong>xperience</h2>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="experience-q1" class="mb-0">My testimony of how I became a Christian:</label>
+          <textarea class="form-control" id="experience-q1" name="experience-q1" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="experience-q2" class="mb-0">Other significant spiritual experiences that stand out in my life are:</label>
+          <textarea class="form-control" id="experience-q2" name="experience-q2" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="experience-q3" class="mb-0">These are the kinds of trials or problems I could relate to and encourage a fellow Christian in:</label>
+          <textarea class="form-control" id="experience-q3" name="experience-q3" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-12">
+          <label for="experience-q4" class="mb-0">Ministry Experience (where I have served in the past):</label>
+          <textarea class="form-control" id="experience-q4" name="experience-q4" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="row top-separation">
+        <div class="col-12">
+          <button onclick="submitForm()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
     </div>
 
-    <div id="results"></div>
   </div>
 
-  <script src="questions.js"></script>
   <script src="qa.js"></script>
+  <script src="gifts.js"></script>
   <script src="scripts.js"></script>
 
 </body>

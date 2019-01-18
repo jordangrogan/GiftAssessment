@@ -15,3 +15,5 @@ const gifts = [
     score: 0
   }
 ];
+
+const numOfGifts = gifts.length;
