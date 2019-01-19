@@ -16,9 +16,12 @@
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
+    console.log(elements);
 
     var fields = Object.keys(elements).filter(function(k) {
-          return (elements[k].name !== "honeypot");
+      if(isNaN(elements[k].name)) { // Added because spiritual gift questions have a name that is a numeric value, we don't want to include those on submission
+        return (elements[k].name !== "honeypot");
+      }
     }).map(function(k) {
       if(elements[k].name !== undefined) {
         return elements[k].name;
@@ -48,9 +51,11 @@
         }
         formData[name] = data.join(', ');
       }
+
     });
 
     // add form-specific values into the data
+    console.log(fields);
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
@@ -103,7 +108,7 @@
       xhr.send(encoded);
     }
   }
-  
+
   function loaded() {
     console.log("Form submission handler loaded successfully.");
     // bind to the submit event of our form
