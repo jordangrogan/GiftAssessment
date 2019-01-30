@@ -60,6 +60,7 @@
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
+    console.log("Form Data: ");
     console.log(formData);
     return formData;
   }
