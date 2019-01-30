@@ -25,11 +25,9 @@
 
         <p>SHAPE stands for Spiritual Gifts, Heart, Abilities, Personality, and Experience. Although there are many paths to discovering your best place of service, the online SHAPE assessment is one way to learn more about the role you can play in God’s grand story!</p>
 
-        <p>Please allow at least 45 minutes to take the full assessment. We are aware that it can seem pretty lengthy, but each portion of the assessment is vital to helping us help you evaluate your “SHAPE,” and then to help you find a place of ministry.</p>
+        <p>Take some time to reflect and answer the following questions. If you don't have an answer right away that's fine, just write "Not Sure". You'll have an opportunity to discuss this further with a coach later! Please allow at least 45 minutes to take the full assessment. We are aware that it can seem pretty lengthy, but each portion of the assessment is vital to helping us help you evaluate your “SHAPE,” and then to help you find a place of ministry.</p>
 
-        <p>We hope you will find this survey helpful. Please be assured that we keep all information confidential and will not violate your privacy in any way.</p>
-
-        <p style="margin-bottom:0;">This assessment is based on Saddleback Church’s S.H.A.P.E. Assessment.</p>
+        <p style="margin-bottom:0;">We hope you will find this survey helpful. Please be assured that we keep all information confidential and will not violate your privacy in any way. This assessment is based on Saddleback Church’s S.H.A.P.E. Assessment.</p>
       </div>
     </div>
 
@@ -71,6 +69,25 @@
               <option value="None">None</option>
             </select>
           </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="SmallGroupYesCheck" class="col-sm-2 col-form-label">Are you in a small group?</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="Small Group" id="SmallGroupYesCheck" value="Yes" onclick="showSmallGroupYes(true)" />
+              <label class="form-check-label" for="SmallGroupYesCheck">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="Small Group" id="SmallGroupNoCheck" value="No" onclick="showSmallGroupYes(false)" />
+              <label class="form-check-label" for="SmallGroupNoCheck">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row d-none" id="smallGroupYes">
+          <label for="small-group-leader" class="col-sm-2 col-form-label">Who is your small group leader?</label>
+          <div class="col-sm-10"><input type="text" name="Small Group Leader" class="form-control" id="small-group-leader" /></div>
         </div>
 
         <div class="row top-separation">

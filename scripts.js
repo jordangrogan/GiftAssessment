@@ -164,10 +164,10 @@ function resetScores() {
 
 updateResults(); // So that it shows the message to fill out questions
 
-function showTimeOptions(show) {
+function showSmallGroupYes(show) {
   if(show) {
-    document.getElementById("timeOptions").className = "row d-block";
+    document.getElementById("smallGroupYes").className = "form-group row";
   } else {
-    document.getElementById("timeOptions").className = "row d-none";
+    document.getElementById("smallGroupYes").className = "form-group row d-none";
   }
 }
