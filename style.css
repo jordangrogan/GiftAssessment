@@ -3,7 +3,7 @@ body {
   font-family: "Avenir Next", sans-serif;
 }
 
-h1, h2 {
+.crossroads-blue {
   color: #007da9;
 }
 
@@ -26,6 +26,17 @@ h1, h2 {
 }
 
 .btn-primary:hover {
+  border-color: #007da9;
   background-color: #e5e4e4;
   color: #007da9;
+}
+
+.btn-primary:disabled {
+  border-color: #007da9;
+  background-color: #e5e4e4;
+  color: #007da9;
+}
+
+.thankyou_message {
+  display: none;
 }

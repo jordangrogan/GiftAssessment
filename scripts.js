@@ -74,23 +74,29 @@ function updateResults() {
 
     // Display Top 3 Gifts
     resultsDiv.innerHTML = `
-    <div class="font-weight-bold">Your Top 3 Gifts Are:</div>
+    <div class="font-weight-bold">Your Top 5 Gifts Are:</div>
     <div>1. ${sortedGifts[0].gift} (${sortedGifts[0].scorePercentage}%)</div>
     <div class="ml-5 font-italic">${sortedGifts[0].description}</div>
     <div>2. ${sortedGifts[1].gift} (${sortedGifts[1].scorePercentage}%)</div>
     <div class="ml-5 font-italic">${sortedGifts[1].description}</div>
     <div>3. ${sortedGifts[2].gift} (${sortedGifts[2].scorePercentage}%)</div>
     <div class="ml-5 font-italic">${sortedGifts[2].description}</div>
+    <div>4. ${sortedGifts[3].gift} (${sortedGifts[3].scorePercentage}%)</div>
+    <div class="ml-5 font-italic">${sortedGifts[3].description}</div>
+    <div>5. ${sortedGifts[4].gift} (${sortedGifts[4].scorePercentage}%)</div>
+    <div class="ml-5 font-italic">${sortedGifts[4].description}</div>
     `;
 
     // Show the follow up questions & set the label names appropriately
-    document.getElementById("spiritualGiftQuestions").className = "d-block";
+    /* document.getElementById("spiritualGiftQuestions").className = "d-block";
     document.querySelector('label[for="whygift1"]').innerHTML = `1. ${sortedGifts[0].gift}`;
     document.querySelector('label[for="whygift2"]').innerHTML = `2. ${sortedGifts[1].gift}`;
-    document.querySelector('label[for="whygift3"]').innerHTML = `3. ${sortedGifts[2].gift}`;
+    document.querySelector('label[for="whygift3"]').innerHTML = `3. ${sortedGifts[2].gift}`;*/
     document.querySelector('input[name="1st Top Gift"]').value = `${sortedGifts[0].gift}`;
     document.querySelector('input[name="2nd Top Gift"]').value = `${sortedGifts[1].gift}`;
     document.querySelector('input[name="3rd Top Gift"]').value = `${sortedGifts[2].gift}`;
+    document.querySelector('input[name="4th Top Gift"]').value = `${sortedGifts[3].gift}`;
+    document.querySelector('input[name="5th Top Gift"]').value = `${sortedGifts[4].gift}`;
 
   } else {
     // Spiritual gifts questions not complete

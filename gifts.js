@@ -14,16 +14,16 @@ const gifts = [
     description: "The gift of craftsmanship is the divine strength or ability to plan, build, and work with your hands in construction environments to accomplish multiple ministry applications.  Exodus 30:22, 31:3-11, 11 Chron. 34:9-13, Acts 18:2-3",
     score: 0
   },
-  // {
-  //   gift: "Discernment",
-  //   description: "The gift of discernment is the divine strength or ability to spiritually identify falsehood and to distinguish between right and wrong motives and situations.  Matt. 16:21-23, Acts 5:1-11, Acts 16:16-18, 1 Cor. 12:10, 1 John 4:1-6",
-  //   score: 0
-  // },
-  // {
-  //   gift: "Evangelism",
-  //   description: "The gift of evangelism is the divine strength of ability to help non-Christians take the necessary steps to becoming a born again Christian.  Acts 8:5-6, Acts 8:26-40, Acts 14:21, Acts 21:8, Eph. 4:11-14",
-  //   score: 0
-  // },
+  {
+    gift: "Discernment",
+    description: "The gift of discernment is the divine strength or ability to spiritually identify falsehood and to distinguish between right and wrong motives and situations.  Matt. 16:21-23, Acts 5:1-11, Acts 16:16-18, 1 Cor. 12:10, 1 John 4:1-6",
+    score: 0
+  },
+  {
+    gift: "Evangelism",
+    description: "The gift of evangelism is the divine strength of ability to help non-Christians take the necessary steps to becoming a born again Christian.  Acts 8:5-6, Acts 8:26-40, Acts 14:21, Acts 21:8, Eph. 4:11-14",
+    score: 0
+  },
   // {
   //   gift: "Exhortation",
   //   description: "The gift of exhortation is the divine strength of ability to encourage others through the written or spoken word and biblical truth.",
