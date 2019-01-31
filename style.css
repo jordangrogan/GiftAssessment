@@ -40,3 +40,7 @@ body {
 .thankyou_message {
   display: none;
 }
+
+.red {
+  color: red;
+}

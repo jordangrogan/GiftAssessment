@@ -100,7 +100,7 @@ function updateResults() {
 
   } else {
     // Spiritual gifts questions not complete
-    resultsDiv.innerHTML = '<span class="font-italic">Fill in these questions above to see your spiritual gift results: ' + incompleteList + '</span>';
+    resultsDiv.innerHTML = '<span class="font-weight-bold red">Fill in these questions above to see your spiritual gift results: ' + incompleteList + '</span>';
   }
 
 }
