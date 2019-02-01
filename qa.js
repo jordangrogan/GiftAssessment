@@ -37,7 +37,7 @@ const questions = [
   { question: "Helping others is one my highest achievements." },
   { question: "Creating a warm and welcoming home is important to me." },
   { question: "I am burdened to pray for situations in the world." },
-  { question: "People seek me out to lean more the Kingdom of God." },
+  { question: "People seek me out to learn more about the Kingdom of God." },
   { question: "I prefer to take the lead whenever necessary." },
   { question: "I'm very sensitive to sad stories." },
   { question: "Miracles often happen when I'm nearby." },
@@ -69,7 +69,7 @@ const questions = [
   { question: "I gain my deepest satisfaction through leading others in vocal or instrument worship." },
   { question: "I enjoy walking with someone in times of distress." },
   { question: "I enjoy hearing passionate and clear preaching of the truth." },
-  { question: "I will to do small things that others pass over." },
+  { question: "I do small things that others pass over." },
   { question: "I prefer to teach the Bible topically rather than verse by verse." },
   { question: "Praying in the Spirit is encouraging and important to me." },
   { question: "When faced with difficulty I tend to make wise decisions and choices." }
