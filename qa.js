@@ -67,7 +67,7 @@ const questions = [
   { question: "I have constant hunger to see God's miraculous power." },
   { question: "I focus a lot on reaching the world for Christ." },
   { question: "I gain my deepest satisfaction through leading others in vocal or instrument worship." },
-  { question: "I enjoy walking with some in times of distress." },
+  { question: "I enjoy walking with someone in times of distress." },
   { question: "I enjoy hearing passionate and clear preaching of the truth." },
   { question: "I will to do small things that others pass over." },
   { question: "I prefer to teach the Bible topically rather than verse by verse." },
