@@ -8,7 +8,7 @@ const questions = [
   { question: "I pray for the lost daily." },
   { question: "Encouraging others is a high priority in my life." },
   { question: "Believing God for our daily needs is important to me." },
-  { question: "Influencing others for the kingdom of God through finances in extremely important to me." },
+  { question: "Influencing others for the kingdom of God through finances is extremely important to me." },
   { question: "I look for opportunities to pray for the sick." },
   { question: "I enjoy doing little things that others do not." },
   { question: "I enjoy having people come to my house." },
